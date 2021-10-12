@@ -231,19 +231,24 @@ h1 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+@media (max-width: 630px) {
+.about-container {
+  font-size: 18px;
 }
 
 .about-copy {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  padding: 0rem 1.2rem;
+  padding: 0rem 1.6rem 1.6rem 1.6rem;
 }
 
 .about-img-container {
   -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
-  padding: 2rem;
+  padding: 1.6rem;
 }
 
 .about-img-container img {
@@ -496,7 +501,7 @@ h1 {
   grid-template-columns: 5% 20% 55% 7% 13%;
   display: -ms-grid;
   display: grid;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -523,7 +528,7 @@ h1 {
 @media (max-width: 630px) {
   .nav-container * {
     padding: 1px;
-    font-size: 0.9rem;
+    font-size: 14px;
   }
   .player-btn .fa-play,
   .player-btn .fa-pause,
@@ -661,7 +666,7 @@ h1 {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 2rem;
   cursor: pointer;
 }
