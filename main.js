@@ -123,8 +123,8 @@ playerContainers.forEach((playerContainer) => {
 
   function setProgress(e) {
     console.log("setprogress", e);
-    const width = this.clientWidth;
-    const clickX = e.offsetX;
+    let width = this.clientWidth;
+    let clickX = e.offsetX;
     console.log(width);
     console.log(clickX);
     audio.currentTime = (clickX / width) * audio.duration;
