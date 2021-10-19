@@ -96,15 +96,15 @@ h1 {
   display: none;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
 .toggle-button-burger {
-  width: 50px;
-  height: 6px;
+  width: 30px;
+  height: 3px;
   background: #fff;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
@@ -115,19 +115,19 @@ h1 {
 .toggle-button-burger::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 30px;
+  height: 3px;
   background: #fff;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
 
 .toggle-button-burger:before {
-  transform: translateY(-16px);
+  transform: translateY(-12px);
 }
 
 .toggle-button-burger:after {
-  transform: translateY(16px);
+  transform: translateY(12px);
 }
 
 /* Animation */
@@ -187,14 +187,14 @@ h1 {
   margin: 0;
   text-align: center;
   font-size: 30px;
-  padding: 2rem;
+  padding: 1.6rem;
 }
 
 .about-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .about-copy {
@@ -248,7 +248,7 @@ h1 {
 }
 
 .event-imgs * {
-  margin: 4px;
+  margin: 0px;
   padding: 1px;
 }
 
@@ -260,8 +260,9 @@ h1 {
 .card-container {
   background-color: transparent;
   perspective: 1000px;
-  width: 240px;
+  width: 280px;
   height: 280px;
+  margin: 0px;
 }
 
 .card-container-inner {
@@ -271,8 +272,10 @@ h1 {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  margin: 0px;
 }
 
+.card-container:active .card-container-inner,
 .card-container:hover .card-container-inner {
   transform: rotateY(180deg);
 }
@@ -342,8 +345,8 @@ h1 {
 
 .player-container {
   position: relative;
-  width: 600px;
-  height: 75px;
+  width: 650px;
+  height: 95px;
   background-color: #252a45;
   margin: 1rem;
 }
@@ -353,7 +356,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 460px;
   top: 60%;
   right: 100px;
 
@@ -374,10 +377,11 @@ h1 {
   }
 }
 
-// .podcast-container.landing .player-container {
-//   margin: 10px 0;
-//   width: 100%;
-// }
+.podcast-container.landing .player-container {
+  margin: 10px 10px;
+  width: 100%;
+}
+
 .podcast-container.landing .time,
 .podcast-container.landing .player-download {
   display: none;
@@ -403,9 +407,10 @@ h1 {
   }
 
   .podcast-container.landing {
-    position: relative;
-    top: 50%;
-    width: 300px;
+    position: sticky;
+    display: block;
+    top: 60%;
+    width: 90%;
     right: unset;
     margin: auto;
   }
@@ -428,7 +433,7 @@ h1 {
 
 .podcast-container.landing .nav-container {
   position: absolute;
-  grid-template-columns: 10% 80% 5% 5%;
+  grid-template-columns: 15% 65% 10% 10%;
   display: grid;
   font-size: 0.8rem;
   align-items: center;
@@ -440,7 +445,26 @@ h1 {
 @media (max-width: 630px) {
   .nav-container * {
     padding: 1px;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .player-btn .fa-play,
+  .player-btn .fa-pause,
+  .fas.fa-volume-up,
+  .fa.fa-volume-mute {
+    font-size: 1.1rem;
+  }
+
+  .nav-container img {
+    height: 30px;
+  }
+
+  .podcast-container.bottom .player-container .nav-container {
+    grid-template-columns: 20% 60% 20%;
+  }
+
+  .podcast-container.bottom .player-container .time,
+  .podcast-container.bottom .player-container .player-download {
+    display: none;
   }
 }
 
@@ -457,7 +481,7 @@ h1 {
 }
 
 .nav-container img {
-  height: 20px;
+  height: 30px;
 }
 
 .nav-container h4 {
@@ -573,10 +597,10 @@ button:hover {
 }
 
 .social .column {
-  margin: 1rem;
+  margin: 0.5rem;
   margin-bottom: 100px;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .social .column a {

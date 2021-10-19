@@ -7,19 +7,9 @@ toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("open");
 });
 
-// const playerContainer = document.getElementsByClassName("player-container");
-// const progressContainer = document.getElementsByClassName("progress-container");
-// const pauseBtn = document.getElementsByClassName("fas.fa-pause");
-// const currentProgressTime = document.getElementsByClassName("progress-time");
-// const durationTime = document.getElementsByClassName("duration");
-// const volUp = document.getElementsByClassName("fas.fa-volume-up");
-// const volMute = document.getElementsByClassName("fa.fa-volume-mute");
-// const download = document.getElementsByClassName("download");
-
 const playerContainers = Array.from(
   document.querySelectorAll(".player-container")
 );
-// console.log("pc", playerContainers);
 
 playerContainers.forEach((playerContainer) => {
   let playerBtn = playerContainer.getElementsByClassName("player-btn")[0].id;
