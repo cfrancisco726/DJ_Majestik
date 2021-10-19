@@ -516,8 +516,8 @@ h1 {
 
 .podcast-container.landing .nav-container {
   position: absolute;
-  -ms-grid-columns: 15% 65% 10% 10%;
-      grid-template-columns: 15% 65% 10% 10%;
+  -ms-grid-columns: 20% 60% 10% 10%;
+      grid-template-columns: 20% 60% 10% 10%;
   display: -ms-grid;
   display: grid;
   font-size: 0.8rem;
@@ -526,7 +526,11 @@ h1 {
           align-items: center;
   width: 100%;
   height: 90%;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.nav-container img {
+  height: 30px;
 }
 
 @media (max-width: 630px) {
@@ -540,8 +544,10 @@ h1 {
   .fa.fa-volume-mute {
     font-size: 1.1rem;
   }
-  .nav-container img {
-    height: 30px;
+  .podcast-container.landing .nav-container {
+    -ms-grid-columns: 12% 68% 10% 10%;
+        grid-template-columns: 12% 68% 10% 10%;
+    padding: 0.5rem;
   }
   .podcast-container.bottom .player-container .nav-container {
     -ms-grid-columns: 20% 60% 20%;
