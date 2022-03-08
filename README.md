@@ -18,7 +18,7 @@ Live demo [_here_](https://dj-majestik.netlify.app/)
 
 - Autoplay video background on landing page
 - Custom audio players of DJ's podcast or mixes
-- Animated cards that flip for details
+- Animated cards that flip for event details
 - contact link to gmail
 
 ## Landing Page
